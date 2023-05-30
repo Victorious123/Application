@@ -1,0 +1,43 @@
+/* Additional styling for the Job Application webpage - in addition to Bootstrap */
+
+img {
+    height: 50%;
+    width: 50%;
+    float: right;
+    margin-top: 40px;
+    border-radius: 2px;
+}
+
+h2 {
+    color: blue;
+}
+
+.button1 {
+    float: right;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    color: white;
+    font-size: 11px;
+    margin-right: 3em;
+}
+
+.button2 {
+    background-color: yellowgreen;
+    border-radius: 4px;
+    font-size: 11px;
+    color: white;
+    margin-top: 3em;
+    margin-left: 26em;
+    margin-bottom: 10em;
+}
+
+.para1{
+    margin-bottom: -25px;
+    margin-top: -50px;
+    font-style: italic;
+}
+
+.para2 {
+    font-style: italic;
+    margin-right: 500px;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "viktoriyagr/328/application",
+  "authors": [
+    {
+      "name": "Viktoriya Kovachyk",
+      "email": "viktoriya.kovachyk@gmail.com"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}

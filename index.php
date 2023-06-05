@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 
 session_start();
 
-//Define a default route
+//Define a default route (home)
 $f3->route('GET /', function() {
     $view = new Template();
     echo $view->render('views/home.html');
@@ -23,7 +23,7 @@ $f3->route('GET /', function() {
 );
 
 
-//Define an application route
+//Define a personal information route
 $f3->route('GET|POST /personalinformation', function($f3) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $f3->reroute('experience');
@@ -35,21 +35,35 @@ $f3->route('GET|POST /personalinformation', function($f3) {
 
 
 
-//Define an application route
-$f3->route('GET /experience', function() {
-//    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-//        $f3->reroute('experience');
-//    }
+//Define an experience route
+$f3->route('GET|POST /personexperience', function($f3) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $f3->reroute('openings');
+    }
     $view = new Template();
     echo $view->render('views/experience.html'); //routing from index to html on any page
 }
 );
 
 
-//Define an experience route
-//$f3->route('GET | POST / experience', function() {
+//Define an openings route (mailing list)
+$f3->route('GET|POST /newopenings', function($f3) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $f3->reroute('submission'); //change
+    }
+    $view = new Template();
+    echo $view->render('views/openings.html'); //routing from index to html on any page
+}
+);
+
+
+//Define a summary/submission page
+//$f3->route('GET|POST /newappsub', function($f3) {
+//    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+//        $f3->reroute(''); //change
+//    }
 //    $view = new Template();
-//    echo $view->render('views/experience.html'); //routing from index to html on any page
+//    echo $view->render('views/newapplicant.html'); //routing from index to html on any page
 //}
 //);
 

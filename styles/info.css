@@ -1,8 +1,56 @@
 .personalhead{
     margin-top: 2em;
-    margin-left: 15em;
+    margin-left: 10px;
 }
 
 .enterinfo{
-    margin-left: 30em;
+    margin-left: 12px;
+}
+
+#fname, #lname, #email, #phone{
+    color: grey;
+}
+
+.email{
+    width: 100%;
+}
+
+.note{
+    background-color: lightgrey;
+    padding: 20px 50px 20px 50px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-top: 2em;
+    margin-bottom: 23px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.next{
+    padding-left: 155px;
+    padding-right: 155px;
+}
+
+.first{
+    padding-right: 12em;
+    margin-bottom: 8px;
+}
+
+.last{
+    padding-right: 9em;
+    margin-bottom: 8px;
+}
+
+.email{
+    margin-bottom: 8px;
+}
+
+.state{
+    padding-right: 10em;
+}
+
+.phone{
+    padding-right: 10em;
 }

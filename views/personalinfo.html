@@ -14,7 +14,7 @@ information - such as name, email, and phone number. As well as the styling with
 
 <body>
 
-<p class="h5 mt-4 ms-4" style="cursor: pointer;">AppCompany LLC</p>
+<a href="/328/application" class="h5 mt-4 ms-4 app" style="cursor: pointer;">AppCompany LLC</a>
 
 <!-- Name of the type of internship -->
 <p class="h4 mt-4 ms-4" style="cursor: pointer;">Software Development Internship</p>
@@ -22,20 +22,78 @@ information - such as name, email, and phone number. As well as the styling with
 <p class="h6 mt-4 ms-4">Seattle Washington, Paid, 12 weeks</p>
 
 
+
 <h2 class="personalhead">Personal Information</h2>
 <hr>
-<form action="#" method="post" class="enterinfo">
-    First Name: <input class="mt-5" type="text" fname="fname"><br><br>
-    Last Name: <input type="text" lname="lname"><br><br> <!-- session needed -->
-    Email: <input type="text" email="email"><br><br> <!-- session needed -->
-    State: <input type="text" state="state"><br><br> <!-- session needed -->
-    Phone: <input type="number" phone="phone"><br><br>
-    <a href="personexperience" role="button"
-       class="btn btn-primary h6 mt-4 ms-4" id="bottom-apply">APPLY NOW</a>
-<!--    <button class="btn btn-primary h6 mt-4 ms-4" id="bottom-apply">APPLY NOW</button>-->
-    </form>
 
 
+<form action="#" method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-sm">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Sarah" maxlength="25" class="first">
+                </div>
+                <div class="col-sm">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Smith" maxlength="25" class="last">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" size="50" Value="myemail@gmail.com" class="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <fieldset>
+                        <label for="state">State:</label><br>
+                        <select class="state" id="state" name="state"><option value="Washington" selected>Washington</option>
+                            <option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option><option value="California">California</option>
+                            <option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option>
+                            <option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option>
+                            <option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option><option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option><option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option><option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option>
+                            <option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option><option value="Virginia">Virginia</option>
+                            <option value="Virgin Islands">Virgin Islands</option><option value="Washington">Washington</option>
+                            <option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option></select>
+                    </fieldset>
+                </div>
+                <div class="col-6">
+                        <label for="phone">Phone:</label><br>
+                        <input type="text" id="phone" name="phone" value="222-333-444" class="phone"><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <p class="note"><span class="bold">Note:</span> all information entered is protected by our
+                <span class="bold">privacy policy.</span> Profile information can only be viewed by others
+                with your permission.</p>
+            <button class="btn btn-success next">Next></button>
+        </div>
+    </div>
+</div>
+</form>
 
 
 </body>

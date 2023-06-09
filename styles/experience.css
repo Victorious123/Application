@@ -1,18 +1,12 @@
-body {background-color: aliceblue;}
+body {background-color: aliceblue;
+    text-align: center;}
 
-
-h1 {
-    text-align: center;
-}
-
-h4{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
 
 .text{
-    text-align: center;
+    margin-top: 2em;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
 }

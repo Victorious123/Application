@@ -14,10 +14,10 @@ and provides a text box for that -->
 </head>
 <body>
 
-<p class="h5 mt-4 ms-4" onclick="location.href = 'home.html';" style="cursor: pointer;">AppCompany LLC</p>
+<a href="home.html"><p class="h5 mt-4 ms-4 app" style="cursor: pointer;">AppCompany LLC</p></a>
 
 <!-- Name of the type of internship -->
-<p class="h4 mt-4 ms-4" onclick="location.href = 'home.html';" style="cursor: pointer;">Software Development Internship</p>
+<p class="h4 mt-4 ms-4" style="cursor: pointer;">Software Development Internship</p>
 
 <p class="h6 mt-4 ms-4">Seattle Washington, Paid, 12 weeks</p>
 
@@ -26,23 +26,55 @@ and provides a text box for that -->
 <h1>Experience</h1>
 <hr>
 
-<h4>Biography</h4>
-
-
 <form action="#" method="post">
-<label for="textarea">
-<textarea id="textarea" class="text" name="text" rows="4" cols="50">
-Please provide information - a little about you, your background and your experience!
-</textarea>
-</label>
-    <a href="newopenings" role="button"
-       class="btn btn-primary h6 mt-4 ms-4" id="bottom-apply">APPLY NOW</a>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h4>Biography</h4>
+                    <label for="textarea">
+                        <textarea id="textarea" class="text" name="text" rows="4" cols="50"></textarea>
+                        </label>
+                </div>
+        <div class="col-4">
+            <h6 class="mt-5">Github Link</h6>
+            <input type="text" name="link" />
+            <h6 class="mt-5">Years of Experience</h6>
+            <input type="radio" id="beginner" name="experience" value="HTML">
+        </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary h6 mt-4 ms-4 mb-5" id="bottom-apply">APPLY NOW</button>
 </form>
 
-<!--Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php".-->
 
-<!--github link-->
-<!--radio buttons-->
+<!---->
+
+<!--<input type="radio" id="beginner" name="experience" value="HTML">-->
+<!--<label for="beginner">0-2</label><br>-->
+
+<!--<input type="radio" id="medium" name="experience" value="CSS">-->
+<!--<label for="medium">2-4</label><br>-->
+
+<!--<input type="radio" id="experienced" name="experience" value="JavaScript">-->
+<!--<label for="experienced">4+</label>-->
+
+
+<!--<h6 class="mt-5">Willing to Relocate?</h6>-->
+
+<!--<input type="radio" id="yes" name="relocation" value="YES">-->
+<!--<label for="yes">Yes</label><br>-->
+
+<!--<input type="radio" id="no" name="relocation" value="NO">-->
+<!--<label for="no">No</label><br>-->
+
+<!--<input type="radio" id="maybe" name="relocation value="MAYBE">-->
+<!--<label for="maybe">Maybe</label>-->
+
+
+
+<!--</form>-->
+<!--Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php".-->
 
 
 </body>

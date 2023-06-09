@@ -1,3 +1,11 @@
 body{
-    background-color: yellow;
+
+}
+
+.avatar{
+    width: 25%;
+    height: 25%;
+    float: right;
+    margin-right: 2em;
+    margin-bottom: 8em;
 }
